@@ -46,7 +46,7 @@ namespace Classes
             //same as for of in JavaScript
             foreach (Employee person in ACME.CurrentEmployees)
             {
-                Console.WriteLine($"{person.FirstName} {person.LastName} works for {ACME.Name} as {person.Title} since {person.StartDate} ");
+                Console.WriteLine($"{person.FirstName} {person.LastName} works for {ACME.Name} as {person.Title} since {person.StartDate.ToShortDateString()} ");
             }
         }
     }
